@@ -4,7 +4,6 @@ const modal_container2 = document.getElementById('modal_container2');
 const close = document.getElementById('close');
 
 
-
 close.addEventListener('click', () => {
 	modal_container.classList.remove('show');
 	location.reload();					  
@@ -14,6 +13,9 @@ close.addEventListener('click', () => {
 	modal_container2.classList.remove('show2');
 	location.reload();					  
 });
+
+/** Evento de Data info */
+
 
   /** Funciones default  */
 ;( function( window ) {

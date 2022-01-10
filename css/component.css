@@ -197,8 +197,8 @@ button.fs-continue,
 	margin-left: 10px;
 	width: 24px;
 	height: 24px;
-	border: 2px solid rgba(0,0,0,0.4);
-	color: rgba(0,0,0,0.4);
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	color: rgba(247, 247, 247, 0.87);
 	border-radius: 50%;
 	content: 'i';
 	vertical-align: top;
@@ -220,7 +220,7 @@ button.fs-continue,
     min-width: 200px;
 	content: attr(data-info);
 	font-size: 0.4em;
-	color: #6a7b7e;
+	color: #ffffffad;
     opacity: 0;
     -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
     transition: opacity 0.3s, transform 0.3s;

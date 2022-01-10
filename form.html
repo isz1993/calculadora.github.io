@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Example</title>
+		<meta name="description" content="Fullscreen Form Interface: A distraction-free form concept with fancy animations" />
+		<meta name="keywords" content="fullscreen form, css animations, distraction-free, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/loadpages.css"/>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />
+	
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="fs-form-wrap" id="fs-form-wrap">
+				<div class="fs-title">
+					<img src="img/logo_bco.png" alt="logo" />
+				</div>
+				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
+					<ol class="fs-fields">
+						<li>
+							<label class="fs-field-label fs-anim cv -upper" for="q1">¿Qué nivel de incertidumbre/riesgo tiene tu iniciativa?</label>
+							<!--<input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Dean Moriarty" required/> -->
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="qa1" name="q1" type="radio" value="conversion"/><label for="qa1" class="radio-conversion">Bajo/Mediano </label></span>
+								<span><input id="qa2" name="q1" type="radio" value="social"/><label for="qa2" class="radio-social">Alto </label></span>
+							</div>
+						</li>
+						
+						<li>
+							<label class="fs-field-label fs-anim cv -upper" for="q2">¿Has validado las hipótesis de tu propuesta de valor y cuentas con el aprendizaje de ello?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="qb1" name="q2" type="radio" value="conversion"/><label for="qb1" class="radio-positive">Sí</label></span>
+								<span><input id="qb2" name="q2" type="radio" value="social"/><label for="qb2" class="radio-negative">No</label></span>
+							</div>
+						</li>
+
+						<li>
+							<label class="fs-field-label fs-anim cv -upper" for="q3">¿Qué tipo de iniciativa tienes?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="qc1" name="q3" type="radio" value="conversion"/><label for="qc1" class="radio-producto">Producto</label></span>
+								<span><input id="qc2" name="q3" type="radio" value="social"/><label for="qc2" class="radio-servicio">Servicio</label></span>
+								<span><input id="qc3" name="q3" type="radio" value="social"/><label for="qc3" class="radio-plataforma">Plataforma Digital</label></span>
+							</div>
+						</li>
+
+						<li>
+							<label class="fs-field-label fs-anim cv -upper" for="q4">¿Cuál es el tipo de alcance que define mejor tu iniciativa?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="qd1" name="q4" type="radio" value="conversion"/><label for="qd1" class="radio-flexible">Flexible</label></span>
+								<span><input id="qd2" name="q4" type="radio" value="social"/><label for="qd2" class="radio-fijo">Fijo</label></span>
+							</div>
+						</li>
+
+						<li>
+							<label class="fs-field-label fs-anim cv -upper" for="q5">¿Tu iniciativa depende de servicios de terceros?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="qe1" name="q5" type="radio" value="conversion"/><label for="qe1" class="radio-positive">Sí</label></span>
+								<span><input id="qe2" name="q5" type="radio" value="social"/><label for="qe2" class="radio-negative">No</label></span>
+							</div>
+						</li>
+
+
+						<li>
+							<label class="fs-field-label fs-anim cv -upper" for="q6">¿Existe un PO dedicado para la iniciativa?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="qf1" name="q6" type="radio" value="conversion"/><label for="qf1" class="radio-po">Sí</label></span>
+								<span><input id="qf2" name="q6" type="radio" value="social"/><label for="qf2" class="radio-nada">No</label></span>
+							</div>
+						</li>
+
+						<li>
+							<label class="fs-field-label fs-anim-upper " for="q7">¿Cuentas con un equipo dedicado mayor a cuatro personas?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="qg1" name="q7" type="radio" value="conversion"/><label for="qg1" class="radio-people">Sí</label></span>
+								<span><input id="qg2" name="q7" type="radio" value="social"/><label for="qg2" class="radio-nada2">No</label></span>
+							</div>
+						</li>
+
+
+
+						
+					</ol><!-- /fs-fields -->
+					<button class="fs-submit" type="submit">Send answers</button>
+				</form><!-- /fs-form -->
+			</div><!-- /fs-form-wrap -->
+		</div><!-- /container -->
+
+<!--Aqui empieza modal_containers 1-->
+<div id="modal_container" class="modal-container">
+	<div class="modal">
+		<img src="img/6363145.jpg" id="img12" alt="No es" style="width:75%;">
+		
+	 
+	  <p id="titulo_modal">
+		Es muy probable que tu iniciativa tenga las condiciones del mercado estables y predecibles, por lo tanto, los requerimientos son claros desde el principio. Usualmente, estos proyectos son llevados por la metodología de cascada. 
+	  </p>
+	  <p id="ayuda_modal">Para poder brindarte más información, acude con el gerente Sr. de la Oficina de Gestión de Proyectos  <A href="joviedo@rotoplas.com " style="color: blue;"> joviedo@rotoplas.com </A> </p>
+	  <button id="close">Cerrar</button>
+	</div>
+  </div>
+
+
+
+		<script src="js/classie.js"></script>
+		<script src="js/selectFx.js"></script>
+		<script src="js/fullscreenForm.js"></script>
+		<script>
+			(function() {
+				var formWrap = document.getElementById( 'fs-form-wrap' );
+
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx( el, {
+						stickyPlaceholder: false,
+						onChange: function(val){
+							document.querySelector('span.cs-placeholder').style.backgroundColor = val;
+						}
+					});
+				} );
+
+				new FForm( formWrap, {
+					onReview : function() {
+						classie.add( document.body, 'overview' ); // for demo purposes only
+					}
+				} );
+			})();
+		</script>
+	</body>
+</html>

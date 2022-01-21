@@ -345,8 +345,8 @@ close.addEventListener('click', () => {
 					}else{
 						document.getElementById("myform").style.display = 'none';
 						document.getElementById("img12").src="img/20945391.jpg";
-						tex1.innerHTML= 'Tú iniciativa cumple con los requerimientos iniciales para ser ejecutada por metodología ágil';
-						tex2.innerHTML= 'Por favor acude con Marco Velasco Toledo <A href="mvelasco@rotoplas.com" style="color: blue;"> mvelasco@rotoplas.com</A>';
+						tex1.innerHTML='Tú iniciativa cumple con los requerimientos iniciales para ser ejecutada por metodología ágil';
+						tex2.innerHTML='Para más información, acude con el agile coach de la organización <A href="zosorio@rotoplas.com" style="color: blue;"> zosorio@rotoplas.com</A>';
 						modal_container.classList.add('show');
 						/**currentFld.querySelector( '.fs-anim-upper' ).addEventListener( animEndEventName, onEndAnimationFn );*/
 					}

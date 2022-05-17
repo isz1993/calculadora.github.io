@@ -360,7 +360,7 @@ close.addEventListener('click', () => {
 						else if (qb21.checked==true){
 							document.getElementById("myform").style.display = 'none';
 							tex1.innerHTML= 'Antes de entrar a un proceso ágil, es necesario realizar la disminución de riesgo de tu iniciativa. El de-risking nos ayudará a disminuir el riesgo de tu propuesta de valor a través de procesos de experimentación';
-							tex2.innerHTML = 'Para poder llevar a cabo esta activdad, te recomendamos acudir con la gerencia de diseño de oferta de valor <A href="nenzastiga@rotoplas.com" style="color: blue;"> nenzastiga@rotoplas.com </A> y experimentación <A href="ocalderon@rotoplas.com" style="color: blue;"> ocalderon@rotoplas.com.</A>';
+							tex2.innerHTML = 'Para poder llevar a cabo esta activdad, te recomendamos acudir con la gerencia de diseño de oferta de valor <A href="nenzastiga@rotoplas.com" style="color: blue;"> nenzastiga@rotoplas.com </A> y experimentación <A href="isanchez@rotoplas.com" style="color: blue;"> isanchez@rotoplas.com.</A>';
 							modal_container.classList.add('show');
 						}
 						else if (qc11.checked==true){

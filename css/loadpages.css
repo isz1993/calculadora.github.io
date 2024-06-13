@@ -8,6 +8,16 @@
     padding: 10px 25px
 }
 
+#generate_pdf {
+  background-color: #0175b8;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 25px
+}
+
 .modal-container {
     display: flex;
     background-color: rgba(0, 0, 0, 0.3);

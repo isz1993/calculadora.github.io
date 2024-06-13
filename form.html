@@ -28,6 +28,18 @@
 				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
 					<ol class="fs-fields">
 						<li>
+							<label id="labelX" class="fs-field-label fs-anim cv -upper" for="q1" data-info="Sí aun no tienes el nivel de riesgo e incertidumbre, por favor, llenar la calculadora de innovación:   https://bit.ly/icalrot ">Datos de la iniciativa</label>
+							<!--<input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Dean Moriarty" required/> -->
+							<br>
+							<label for="name">Nombre de Initative Owner:</label>
+							<input type="text" id="fname" name="fname" required />
+							<label for="name">Número de iniciativa:</label>
+							<input type="text" id="fnuinitia" name="fnuinitia" required />
+							<label for="name">Nombre de iniciativa:</label>
+							<input type="text" id="fnoinitia" name="fnoinitia" required />
+						</li>
+
+						<li>
 							<label id="label1" class="fs-field-label fs-anim cv -upper" for="q1" data-info="Sí aun no tienes el nivel de riesgo e incertidumbre, por favor, llenar la calculadora de innovación:   https://bit.ly/icalrot ">¿Qué nivel de incertidumbre/riesgo tiene tu iniciativa?</label>
 							<!--<input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Dean Moriarty" required/> -->
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
@@ -100,11 +112,15 @@
 	<div class="modal">
 		<img src="img/6363145.jpg" id="img12" alt="No es" style="width:75%;">
 		
+		<p id="datosini" style="color: black; ">
+ 
+		</p>
 	 
 	  <p id="titulo_modal">
 		Es muy probable que tu iniciativa tenga las condiciones del mercado estables y predecibles, por lo tanto, los requerimientos son claros desde el principio. Usualmente, estos proyectos son llevados por la metodología de cascada. 
 	  </p>
-	  <p id="ayuda_modal">Para poder brindarte más información, acude con el gerente Sr. de la Oficina de Gestión de Proyectos  <A href="joviedo@rotoplas.com " style="color: blue;"> joviedo@rotoplas.com </A> </p>
+	  <p id="ayuda_modal">Para poder brindarte más información, acude con el gerente Sr. de la Oficina de Gestión de Proyectos  <A href="mmartinez@rotoplas.com " style="color: blue;"> mmartinez@rotoplas.com </A> </p>
+	  <button id="generate_pdf">Generar PDF</button> 
 	  <button id="close">Cerrar</button>
 	</div>
   </div>
@@ -114,6 +130,8 @@
 		<script src="js/classie.js"></script>
 		<script src="js/selectFx.js"></script>
 		<script src="js/fullscreenForm.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
 		<script>
 			(function() {
 				var formWrap = document.getElementById( 'fs-form-wrap' );
@@ -134,5 +152,14 @@
 				} );
 			})();
 		</script>
+		
+		<script>
+		document.getElementById('generate_pdf').addEventListener('click', function() {
+			const element = document.querySelector('.modal');
+			// Usando html2pdf para generar el PDF
+			html2pdf().from(element).save('iniciativa.pdf');
+		});
+		</script>
+  
 	</body>
 </html>

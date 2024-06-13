@@ -327,15 +327,22 @@ close.addEventListener('click', () => {
 		var qe11 = document.getElementById('qe1');
 		var qf21 = document.getElementById('qf2');
 		var qg21 = document.getElementById('qg2');
+		var tex0=document.getElementById('datosini');
 		var tex1 = document.getElementById('titulo_modal');
 		var tex2 = document.getElementById('ayuda_modal');
 
+		var nom1 = document.getElementById('fname').value;
+		var nuin1 = document.getElementById('fnuinitia').value;
+		var noin1 = document.getElementById('fnoinitia').value;
 
 	
 		if( support.animations) {
-			
-			
-			if( this.navdir === 'next' ) {
+			/**Esto es para agregar datos de nombre */
+			tex0.innerHTML='<strong>Nombre de Initative Owner: </strong>' + nom1 + '<br>' +
+			'<strong>No. Iniciativa:</strong> ' + nuin1 + '<br>' +
+			'<strong>Nom. Iniciativa:</strong> ' + noin1;	
+
+			if( this.navdir === 'next' ) {			
 				if( this.isLastStep ) {
 				/** Exepción del stop */
 					if (qg21.checked==true){

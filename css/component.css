@@ -252,10 +252,10 @@ button.fs-continue,
 	border: none;
 	border-bottom: 2px solid rgba(0,0,0,0.2);
 	background-color: transparent;
-	color: #fffed8;
+	color: #ffffff;
 	text-overflow: ellipsis;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1em;
 	border-radius: 0;
 }
 
@@ -276,7 +276,8 @@ button.fs-continue,
 }
 
 .fs-fields input:focus {
-	background-color: #3b3f45; /* Fixes chrome bug with placeholder */
+	background-color: #3ba6ee; /* Fixes chrome bug with placeholder */
+	
 }
 
 .fs-form-overview .fs-fields input:focus {
